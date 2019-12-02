@@ -46,12 +46,9 @@ body {
 }
 
 .project-tile {
-    margin: 0 auto;
     display: block;
     border-bottom-style:dotted;
-/*    box-shadow: 5px 5px black ;*/
     transition: .5s ease;
-    
     border-color: gray;
     height: 15rem;
     align-content: center;
@@ -107,20 +104,24 @@ body {
 
 #page-description {
     text-align: center;
-    width: minmax(300px, 640px);
-    text-justify: auto;
-    
+    align-content:center;
+    min-width: 300px;
+/*    max-width: 600px;    */
 }
 
-article {
+#page-description #h-main {
+    margin-bottom: 50px;
+     
+}
+
+#page-description article {
     margin: auto 50px 20px 90px;
     font-size: 2rem;
 }
+
 a img{
-    
-    margin-left: 10px;
-    margin-right: 10px;
-    max-width: 100%;
+    border-style: dotted;
+    max-width: 300px;
     align-self: center;
 }
 
@@ -133,6 +134,7 @@ a img{
 
 .model h4{
     font-size: 3rem;
+    font-weight: 300;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
