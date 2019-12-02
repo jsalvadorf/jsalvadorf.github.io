@@ -5,8 +5,14 @@ html {
     font-size: 10px;
 }
 
-body {
+h3 {
+    font-weight: 400;
+}
 
+body {
+    
+    display: contents;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -15,7 +21,7 @@ body {
     background-color: whitesmoke;
 }
 
-#h-jsalvador {
+#h-main {
     font-weight: 300;
     font-size: 5rem;
     margin: 50px auto 15px auto;
@@ -26,11 +32,11 @@ body {
     font-size: 2rem;
 }
 
+
 .projects{
-    background-color: darkgray;
+/*    background-color: lightgray;*/
     display: grid;
     font-size: 1.4rem;
-    margin: 10px 25px 10px 25px;
     grid-column: 150px;
     grid-gap: 1.5rem;
     justify-content:center;
@@ -40,21 +46,94 @@ body {
 }
 
 .project-tile {
-    background-color: red;
+    margin: 0 auto;
+    display: block;
+    border-bottom-style:dotted;
+/*    box-shadow: 5px 5px black ;*/
+    transition: .5s ease;
+    
+    border-color: gray;
     height: 15rem;
     align-content: center;
     align-self: center;
     text-align: center;
+    background-position:center;
+    background-color: beige;
+    position: relative;
     
 }
 
-img {
-    align-self: baseline;
-    max-width: 100%;
-    object-fit: cover;
-
+.project-tile:hover{
+    border-color: black;
+    box-shadow: 5px 5px black;
 }
 
-img:hover {
-    border-radius: 50%;
+.project-details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:1;
+    color: white;
+    padding: 0px;
+    text-align-last: center;
 }
+
+.project-details:hover  {
+/*    opacity: 10%;*/
+    background: rgba(0, 0, 0, 0.01); /* Black see-through */
+    text-align: right;
+    
+
+}
+.project-details:hover  h3{
+    transition: .5s ease;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    background: white;
+}
+
+.project-tile img {
+    object-fit: none; /* Do not scale the image */
+    object-position: center; 
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#page-description {
+    text-align: center;
+    width: minmax(300px, 640px);
+    text-justify: auto;
+    
+}
+
+article {
+    margin: auto 50px 20px 90px;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .projects {
+        grid-template-columns: 100%;
+        grid-template-rows: 100px;
+        width: 100%;
+        height: 100%;
+        margin: 0px 15px 0px 15px;
+ 
+    }
+    .project-tile {
+        margin: 0px 15px 0px 15px;
+        height: 30%;
+    }
+    
+    #h-main {
+        
+    }
+}
+
+
