@@ -21,46 +21,48 @@ body {
     background-color: whitesmoke;
 }
 
+#welcome-section {
+    margin-bottom: 30px;
+}
+
 #h-main {
     font-weight: 300;
     font-size: 5rem;
     margin: 50px auto 15px auto;
 }
 
-#h-skills {
+#h-sub {
     font-weight: bold;
     font-size: 2rem;
 }
 
+/*  GRID DE PROJETOS  */
 
 .projects{
-/*    background-color: lightgray;*/
     display: grid;
     font-size: 1.4rem;
     grid-column: 150px;
     grid-gap: 1.5rem;
     justify-content:center;
-/*    grid-template-columns: 90%;*/
     grid-template-columns: repeat(auto-fill, minmax(300px, 640px));
 
 }
 
 .project-tile {
     display: block;
+/*
     border-bottom-style:dotted;
     transition: .5s ease;
-    border-color: gray;
+    border-color: yellow;
+*/
     height: 15rem;
-    align-content: center;
-    align-self: center;
     text-align: center;
     background-position:center;
-    background-color: beige;
+    background-color: black;
     position: relative;
-    
 }
 
-.project-tile:hover{
+.project-tile:hover, .project-tile:active{
     border-color: black;
     box-shadow: 5px 5px black;
 }
@@ -69,7 +71,7 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* Black see-through */
+    background: rgba(0, 0, 0, 0.6); /* Black see-through */
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
@@ -79,76 +81,81 @@ body {
     text-align-last: center;
 }
 
-.project-details:hover  {
-/*    opacity: 10%;*/
-    background: rgba(0, 0, 0, 0.01); /* Black see-through */
+a img{
+/*    border-style: dotted;*/
+}
+
+a h3{
+    font-weight: 100;
+}
+
+
+.project-details:hover, .project-details:active  {
+    background: rgba(0, 0, 0, 0.01);
     text-align: right;
     
 
 }
-.project-details:hover  h3{
+
+.project-details:hover h3, .project-details:active  ~h3{
     transition: .5s ease;
-    font-size: 4rem;
-    font-weight: bold;
+    transform: scale(1.2);
+    font-weight: 800;
     color: black;
-    background: white;
+    background: rgba(255,255,255,0.9)
 }
 
+
+
+.project-details h3:hover, .project-details h3:active{
+    transition: .5s ease;
+    transform: scale(1.5);
+    font-weight: 800;
+    color: black;
+    background: rgba(255,255,255,0.9);
+}
+
+a h3:hover, a h3:active{
+    transition: .5s ease;
+    transform: scale(1.1);
+    font-weight: 800;
+    color: black;
+    background: rgba(255,255,255,0.9);
+}
+
+
 .project-tile img {
-    object-fit: none; /* Do not scale the image */
-    object-position: center; 
+    object-fit: cover; /* Do not scale the image */
     display: block;
     height: 100%;
     width: 100%;
 }
 
-#page-description {
-    text-align: center;
-    align-content:center;
-    min-width: 300px;
-/*    max-width: 600px;    */
-}
-
-#page-description #h-main {
-    margin-bottom: 50px;
-     
-}
-
-#page-description article {
-    margin: auto 50px 20px 90px;
-    font-size: 2rem;
-}
-
-a img{
-    border-style: dotted;
-    max-width: 300px;
-    align-self: center;
-}
-
-.model {
-    border-width: thin;
-    border-color: black;
-    border-radius: 5px;
-    border-style: solid
-}
-
-.model h4{
-    font-size: 3rem;
-    font-weight: 300;
-}
 
 @media (min-width: 320px) and (max-width: 480px) {
+    
     .projects {
         grid-template-columns: 100%;
-        grid-template-rows: 100px;
-        width: 100%;
-        height: 100%;
-        margin: 0px 15px 0px 15px;
+        grid-template-rows: 500px;
+        margin: 0px auto 0px auto;
  
     }
     .project-tile {
-        margin: 0px 15px 0px 15px;
+        margin: 0px 5px 0px 5px;
         height: 30%;
+    }
+    
+    #page-description {
+        width: 400px;
+    }
+    
+    #h-main {
+        font-size: 4rem;
+
+    }
+    
+    #link-back {
+        top = 0;
     }
     
 }

@@ -14,42 +14,86 @@ body {
     display: contents;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
+/*
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: center;
     color: #333;
-    background-color: whitesmoke;
+*/
 }
 
 #h-main {
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 50px auto 15px auto;
 }
 
-#h-skills {
+article {
+    font-size: 1.4rem;
+    margin: 50px 20px 15px 20px;
+}
+
+#h-sub {
     font-weight: bold;
     font-size: 2rem;
 }
 
 
-.projects{
-/*    background-color: lightgray;*/
+section.models{
+/*
+    border-color: blue;
+    border-style: dotted;
+*/
+    
+    display: grid;
+    grid-gap: 1.5rem;
+/*    grid-template-columns: repeat(auto-fit, minmax(300px, 640px));*/
+    margin: 15px;
+    align-content: center;
+    
+/*
     display: grid;
     font-size: 1.4rem;
     grid-column: 150px;
     grid-gap: 1.5rem;
     justify-content:center;
-/*    grid-template-columns: 90%;*/
     grid-template-columns: repeat(auto-fill, minmax(300px, 640px));
+*/
+}
 
+div.model {
+/*
+    border-color: red;
+    border-style: dotted;
+*/
+    object-position: center;
+    margin: 15px auto 15px auto;
+}
+
+div.model p {
+    font-size: 2rem;
+}
+
+div.model img{
+/*
+    border-color: greenyellow;
+    border-style: dotted;
+*/
+    max-width: 350px;
+ 
+}
+
+.model h4{
+    font-weight: bold;
 }
 
 .project-tile {
+/*
     margin: 0 auto;
     display: block;
     border-bottom-style:dotted;
-/*    box-shadow: 5px 5px black ;*/
     transition: .5s ease;
     
     border-color: gray;
@@ -60,19 +104,23 @@ body {
     background-position:center;
     background-color: beige;
     position: relative;
+*/
     
 }
 
 .project-tile:hover{
+/*
     border-color: black;
     box-shadow: 5px 5px black;
+*/
 }
 
 .project-details {
+/*
     position: absolute;
     top: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* Black see-through */
+    background: rgba(0, 0, 0, 0.3);  
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
@@ -80,60 +128,83 @@ body {
     color: white;
     padding: 0px;
     text-align-last: center;
+*/
 }
 
 .project-details:hover  {
-/*    opacity: 10%;*/
-    background: rgba(0, 0, 0, 0.01); /* Black see-through */
+/*
+    background: rgba(0, 0, 0, 0.01); 
     text-align: right;
+*/
     
 
 }
 .project-details:hover  h3{
+/*
     transition: .5s ease;
     font-size: 4rem;
     font-weight: bold;
     color: black;
     background: white;
+*/
 }
 
 .project-tile img {
-    object-fit: none; /* Do not scale the image */
+/*
+    object-fit: none; 
     object-position: center; 
     display: block;
     height: 100%;
     width: 100%;
+*/
 }
 
 #page-description {
+/*
     text-align: center;
     width: minmax(300px, 640px);
     text-justify: auto;
     
+*/
 }
 
 article {
+/*
     margin: auto 50px 20px 90px;
     font-size: 1.5rem;
+*/
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
     .projects {
+/*
         grid-template-columns: 100%;
         grid-template-rows: 100px;
         width: 100%;
         height: 100%;
         margin: 0px 15px 0px 15px;
+*/
  
     }
     .project-tile {
+/*
         margin: 0px 15px 0px 15px;
         height: 30%;
+*/
+    }
+    
+    .model {
+        
+    }
+    
+    .model img {
+        width: 200px;
     }
     
     #h-main {
         
     }
+    
 }
 
 
