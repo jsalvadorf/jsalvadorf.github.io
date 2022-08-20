@@ -136,13 +136,12 @@ a h3:hover, a h3:active{
     
     .projects {
         grid-template-columns: 100%;
-        grid-template-rows: 500px;
         margin: 0px auto 0px auto;
  
     }
     .project-tile {
         margin: 0px 5px 0px 5px;
-        height: 30%;
+      
     }
     
     #page-description {

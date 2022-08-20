@@ -166,25 +166,16 @@ article {
 
 @media (min-width: 320px) and (max-width: 480px) {
     .projects {
-/*
+
         grid-template-columns: 100%;
         grid-template-rows: 100px;
         width: 100%;
-        height: 100%;
         margin: 0px 15px 0px 15px;
-*/
  
     }
     .project-tile {
-/*
         margin: 0px 15px 0px 15px;
-        height: 30%;
-*/
-    }
-    
-    
-    .model img {
-        width: 500px;
+        height: 30px;
     }
     
     #h-main {
