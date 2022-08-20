@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="ql-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,800&display=swap" rel="stylesheet">
-
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-
-    <script>
-        const a = document.createElement("a");
-        if (a.relList.supports("ar")) {
-            // AR is available.
-        }
-    </script>
-
-</head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" type="text/css" href="js-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,800&display=swap" rel="stylesheet">
+    
+    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-
-<section id="page-description">
+<section id="welcome-section">
     <h1 id="h-main">QuickLook AR Gallery</h1>
     <article>
         Integrado ao iOS e Android, existe o suporte nativo para visualizar modelos 3D em Realidade Aumentada<br><strong> Clique no modelo 3D</strong><br> para visualizar em RA.
@@ -29,33 +18,40 @@
 
 </section>
 
-<section class="models">
-    <div class="model">
-        <model-viewer src="Models/carmodel.glb"
-        ios-src="Models/carmodel.usdz"
-        alt="Modelo 3D de motor"
-        ar
-        auto-rotate
-        camera-controls></model-viewer>
-        <p> Motor Escaneado do Gol G7</p>
-    </div>
-    <div class="model">
-        <model-viewer src="Models/TFSI_engine.glb"
-        ios-src="Models/TFSI_engine.usdz"
-        alt="Modelo 3D de motor"
-        ar
-        auto-rotate
-        camera-controls></model-viewer>
-        <p> Motor Audi TFSI</p>
-    </div>
-    <div class="model">
-        <model-viewer src="Models/cracked_engine.glb"
-        ios-src="Models/cracked_engine.usdz"
-        alt="Modelo 3D de motor"
-        ar
-        auto-rotate
-        camera-controls></model-viewer>
-        <p> Motor quebrado de um Hyundai</p>
-    </div>
+<section class="projects">
+    
+    <a href="ql-gol.html">
+        <div class="project-tile">
+            <div class="project-details" >
+                <h3>Motor Gol G7 Track</h3>
+            </div>
+            <img src="p-thumbs/quicklookgallery.jpg">
+        </div>
+    </a>
 
-</section></html>
+    <a href="ql-audi.html">
+        <div class="project-tile">
+            <div class="project-details" >
+                <h3>Motor Audi TFSI</h3>
+            </div>
+            <img src="p-thumbs/quicklookgallery.jpg">
+            
+        </div>
+    </a>
+    <a href="ql-hyundai.html">
+        <div class="project-tile">
+            <div class="project-details" >
+                <h3>Motor Hyudai Quebrado</h3>
+            </div>
+            <img src="p-thumbs/quicklookgallery.jpg">
+            
+        </div>
+    </a>
+    <div class="link-back">
+        <a id="link-back" href="https://inspace.tech/" style="text-decoration: none"><h3 style=" color: black;">Go Back to Portfolio</h3>
+        </a>
+    </div>
+    
+</section>
+
+</html>
