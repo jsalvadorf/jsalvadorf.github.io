@@ -3,8 +3,7 @@ html {
      Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
    */
     font-size: 10px;
-    background-color: #ebeef2;
-    background-image: linear-gradient(#0DA6FF, #0C131f);
+    background-color: #0DA6FF;
 
 }
 
@@ -20,7 +19,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: center;
-    color: #ebeef2;
+    color: #0C131f;
     background-color: #6ECAFF;
 }
 
