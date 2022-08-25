@@ -38,14 +38,14 @@ article {
 
 section.models{
 
+    border-color: red;
+    border-style: dotted;
     display: grid;
     grid-gap: 1.5rem;
 
     margin: 15px;
     align-content: center;
 
-
-    grid-template-columns: repeat(auto-fit, minmax(300px, 640px));
     display: grid;
     font-size: 1.4rem;
     grid-column: 50vw;
@@ -62,7 +62,9 @@ div.model {
 }
 
 div.model model-viewer {
+
     height: 50vh;
+    width: 80vw;
 }
 
 div.model p {
