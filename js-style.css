@@ -3,7 +3,7 @@ html {
      Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
    */
     font-size: 10px;
-    background-color: #0DA6FF;
+    background-color: #0c131f;
 
 }
 
@@ -19,7 +19,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: center;
-    color: #0C131f;
+    color: #EBEEF2;
     background-color: #6ECAFF;
 }
 
@@ -28,7 +28,8 @@ body {
 }
 
 #h-main {
-    font-weight: 300;
+    color: #0DA6FF;
+    font-weight: 800;
     font-size: 5rem;
     margin: 50px auto 15px auto;
 }
