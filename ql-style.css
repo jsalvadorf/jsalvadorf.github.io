@@ -3,6 +3,7 @@ html {
      Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
    */
     font-size: 10px;
+    background-color: #0c131f;
 }
 
 h3 {
@@ -14,13 +15,14 @@ body {
     display: contents;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: #6ECAFF;
     text-align: center;
+    color: #EBEEF2;
 
 }
 
 #h-main {
-    font-weight: 300;
+    color: #0DA6FF;
+    font-weight: 400;
     font-size: 4rem;
     margin: 50px auto 15px auto;
 }
