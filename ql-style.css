@@ -38,8 +38,6 @@ article {
 
 section.models{
 
-    border-color: red;
-    border-style: dotted;
     display: grid;
     grid-gap: 1.5rem;
 
