@@ -20,7 +20,6 @@ body {
     line-height: 1.5;
     text-align: center;
     color: #EBEEF2;
-    background-color: #6ECAFF;
 }
 
 #welcome-section {
@@ -32,6 +31,12 @@ body {
     font-weight: 800;
     font-size: 5rem;
     margin: 50px auto 15px auto;
+
+}
+
+p {
+    padding: 1vw;
+
 }
 
 #h-sub {
@@ -105,7 +110,7 @@ a h3{
     transform: scale(1.2);
     font-weight: 800;
     color: black;
-    background: rgba(10,134,205,0.9)
+    background: rgba(13,166,255,0.9)
 }
 
 
